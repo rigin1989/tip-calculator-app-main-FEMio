@@ -1,0 +1,51 @@
+/*{
+    border:solid red 2px;
+}/*
+/*=========================
+  ====GLOBAL STRUCTURES====
+  =========================*/
+
+body{
+    font-size: 24px;
+    font-family: $font-stack;
+    background-color: $light-grayish-cyan1;
+
+    @media (max-width:$mobile){
+        font-size: 16px;
+    }
+}
+
+h4{
+    font-size: .75em;
+    margin-bottom: 0;
+    font-weight: 400;
+    color:$dark-grayish-cyan1;
+    text-transform: capitalize;
+}
+
+input{
+    margin-top:0;
+    background-color: $light-grayish-cyan2;
+    width: 100%;
+    border:none;
+    font-size: 1.5em;
+}
+
+form{
+    border: solid red 2px;
+    padding:0;
+}
+
+/*===============
+  ====BUTTONS====
+  ===============*/
+
+.btn{
+    background-color: $very-dark-cyan;
+    margin:10px;
+    padding:.25em 2em;
+    color: $light-grayish-cyan2;
+    border:none;
+    text-align: center;
+    border-radius: 5%;
+}

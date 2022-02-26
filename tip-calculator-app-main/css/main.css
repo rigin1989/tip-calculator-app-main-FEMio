@@ -1,0 +1,123 @@
+/*=======================
+  =Front-end Style Guide=
+  =======================*/
+/*======================
+  =====BREAKPOINTS======
+  ======================*/
+/*==================
+  ======Colors======
+  ==================*/
+/*======================
+  ======Typography======
+  ======================*/
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+/*{
+    border:solid red 2px;
+}/*
+/*=========================
+  ====GLOBAL STRUCTURES====
+  =========================*/
+body {
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  background-color: #c5e4e7;
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+h4 {
+  font-size: .75em;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: #5e7a7d;
+  text-transform: capitalize;
+}
+
+input {
+  margin-top: 0;
+  background-color: #f4fafa;
+  width: 100%;
+  border: none;
+  font-size: 1.5em;
+}
+
+form {
+  border: solid red 2px;
+  padding: 0;
+}
+
+/*===============
+  ====BUTTONS====
+  ===============*/
+.btn {
+  background-color: #00494d;
+  margin: 10px;
+  padding: .25em 2em;
+  color: #f4fafa;
+  border: none;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.header {
+  margin: auto;
+  margin-top: 20px;
+  width: 40px;
+}
+
+.calculator {
+  background-color: white;
+  border-radius: 15%;
+  margin: 15px 20%;
+}
+
+@media (max-width: 375px) {
+  .calculator {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    border-radius: 1em;
+    padding: 2em;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+#tip {
+  border: solid blue 2px;
+  width: 100%;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "5 10" "15 25" "50 custom";
+}
+
+#5 {
+  grid-area: "5";
+}
+
+#10 {
+  grid-area: "10";
+}
+
+#15 {
+  grid-area: "15";
+}
+
+#25 {
+  grid-area: "25";
+}
+
+#50 {
+  grid-area: "50";
+}
+
+#custom {
+  grid-area: "custom";
+}
